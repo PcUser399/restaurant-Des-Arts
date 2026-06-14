@@ -1404,11 +1404,12 @@ html {
 @media (max-width: 720px) {
   .site-header { padding: 0.9rem 1rem; }
   .nav-shell {
-    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.75rem;
     max-width: none;
   }
   .mobile-menu-button {
+    order: 2;
     flex-shrink: 0;
     gap: 0.55rem;
   }
@@ -1416,9 +1417,10 @@ html {
     display: none;
   }
   .brand {
+    order: 1;
     min-width: 0;
-    justify-self: end;
-    text-align: right;
+    justify-self: start;
+    text-align: left;
   }
   .brand span {
     max-width: calc(100vw - 8.5rem);
@@ -1430,8 +1432,35 @@ html {
   .hero-content { padding-top: 8rem; }
   .hero h1 { letter-spacing: 0.1em; }
   .mosaic-top, .mosaic-bottom { grid-template-columns: 1fr; }
+  .experience-row img,
+  .experience-row.reverse img { order: 1; }
+  .experience-row article { order: 2; }
   .journey-section { padding-block: 3.5rem; }
+  .journey-stage { gap: 1.6rem; }
+  .journey-row,
+  .journey-row-two,
+  .journey-row-three {
+    display: contents;
+  }
+  .journey-row-one .journey-heading { order: 0; }
+  .journey-row-one > .journey-text:nth-child(1) { order: 1; }
+  .journey-row-one > .journey-image-card:nth-child(2) { order: 2; }
+  .journey-row-two > .journey-text:nth-child(1) { order: 3; }
+  .journey-row-two > .journey-image-card:nth-child(2) { order: 4; }
+  .journey-row-three > .journey-text:nth-child(1) { order: 5; }
+  .journey-row-three > .journey-image-card:nth-child(2) { order: 6; }
+  .journey-row-one > .journey-text:nth-child(5) { order: 7; }
+  .journey-row-one > .journey-image-card:nth-child(4) { order: 8; }
+  .journey-row-two > .journey-text:nth-child(5) { order: 9; }
+  .journey-row-two > .journey-image-card:nth-child(4) { order: 10; }
+  .journey-row-three > .journey-text:nth-child(5) { order: 11; }
+  .journey-row-three > .journey-image-card:nth-child(4) { order: 12; }
   .journey-heading p { letter-spacing: 0.32em; }
+  .journey-heading small {
+    max-width: min(20rem, 86vw);
+    margin-top: 1rem;
+    line-height: 1.7;
+  }
   .review-section { padding-block: 4rem; }
   .review-award img { min-height: 18rem; }
   .contact-layout { margin-top: 3rem; }
