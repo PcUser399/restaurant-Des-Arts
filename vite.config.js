@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 export default defineConfig({
   server: {
     host: '0.0.0.0',
-    allowedHosts: ['.ngrok-free.app', '.ngrok.app', '.ngrok.io','nonextensively-monodomous-juana.ngrok-free.dev'],
+    allowedHosts: ['.ngrok-free.app', '.ngrok.app', '.ngrok.io','nonextensively-monodomous-juana.ngrok-free.dev','animated-queijadas-e75077.netlify.app'],
   },
   build: {
     rollupOptions: {
