@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#182016" />
+    <meta
+      name="description"
+      content="Menu du Restaurant des Arts avec entrees, plats principaux, desserts et selections du soir."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Menus | Restaurant des Arts" />
+    <meta property="og:description" content="Explorez les menus du Restaurant des Arts par categorie." />
+    <meta property="og:image" content="/images/grilled-main.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Menus | Restaurant des Arts</title>
+  </head>
+  <body class="menu-document">
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <button class="mobile-menu-button" type="button" data-menu-open aria-label="Ouvrir la navigation">
+          <span>Menu<span></span></span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="nav-links nav-left" aria-label="Navigation principale gauche">
+          <a href="/">Accueil</a>
+          <a href="/#about">A propos</a>
+        </nav>
+        <a class="brand" href="/" aria-label="Accueil Restaurant des Arts">
+          <span>Restaurant des Arts</span>
+          <i aria-hidden="true"><b></b><em></em><b></b></i>
+        </a>
+        <nav class="nav-links nav-right" aria-label="Navigation principale droite">
+          <a href="/menu.html">Menu</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="menu-panel" data-menu-panel aria-hidden="true">
+      <button type="button" data-menu-close aria-label="Fermer la navigation">Fermer</button>
+      <a href="/">Accueil</a>
+      <a href="/#about">A propos</a>
+      <a href="/menu.html">Menu</a>
+      <a href="/#contact">Contact</a>
+    </div>
+
+    <main class="menu-page">
+      <section class="menu-hero">
+        <div></div>
+        <article class="reveal">
+          <p class="eyebrow">Restaurant des Arts</p>
+          <h1>Menus</h1>
+          <div class="small-ornament centered" aria-hidden="true"><span></span><i></i><span></span></div>
+          <span>Choisissez une categorie et decouvrez chaque plat prepare pour la table.</span>
+        </article>
+      </section>
+
+      <section class="menu-board" data-menu-board>
+        <div class="menu-selector reveal" aria-label="Menu categories">
+          <button type="button" data-category="all">Tous</button>
+          <button type="button" data-category="entrees">Entrees</button>
+          <button type="button" data-category="plat-principal">Plat Principal</button>
+          <button type="button" data-category="dessert">Dessert</button>
+          <button type="button" data-category="en-soiree">En soiree</button>
+        </div>
+
+        <div class="menu-items">
+          <article class="menu-item reveal" data-menu-category="entrees" data-price="34">
+            <img src="/images/menu/entrees1.jpg" alt="Entree 1" />
+            <span class="menu-price"><strong>34</strong><small>TND</small></span>
+            <section><p class="mahdi">Entrees</p><h2>Fondant au Chocolat</h2><span>Selection d'entree preparee pour ouvrir le repas.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="entrees" data-price="29">
+            <img src="/images/menu/entrees2.jpg" alt="Entree 2" />
+            <span class="menu-price"><strong>29</strong><small>TND</small></span>
+            <section><p class="mahdi">Entrees</p><h2>Feuilletine Pistache</h2><span>Selection d'entree preparee pour ouvrir le repas.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="entrees" data-price="32">
+            <img src="/images/menu/entrees3.jpg" alt="Entree 3" />
+            <span class="menu-price"><strong>32</strong><small>TND</small></span>
+            <section><p class="mahdi">Entrees</p><h2>Bruschetta Tomate</h2><span>Selection d'entree preparee pour ouvrir le repas.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="entrees" data-price="36">
+            <img src="/images/menu/entrees4.jpg" alt="Entree 4" />
+            <span class="menu-price"><strong>36</strong><small>TND</small></span>
+            <section><p class="mahdi">Entrees</p><h2>Assiette d'Entree Tunisienne</h2><span>Selection d'entree preparee pour ouvrir le repas.</span></section>
+          </article>
+
+          <article class="menu-item reveal" data-menu-category="plat-principal" data-price="58">
+            <img src="/images/menu/platPrincipale1.jpg" alt="Plat principal 1" />
+            <span class="menu-price"><strong>58</strong><small>TND</small></span>
+            <section><p class="mahdi">Plat Principal</p><h2>Medallions Cremeux</h2><span>Plat principal servi avec garniture et finition maison.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="plat-principal" data-price="64">
+            <img src="/images/menu/platPrincipale2.jpg" alt="Plat principal 2" />
+            <span class="menu-price"><strong>64</strong><small>TND</small></span>
+            <section><p class="mahdi">Plat Principal</p><h2>Pates au Poulet</h2><span>Plat principal servi avec garniture et finition maison.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="plat-principal" data-price="62">
+            <img src="/images/menu/platPrincipale3.jpg" alt="Plat principal 3" />
+            <span class="menu-price"><strong>62</strong><small>TND</small></span>
+            <section><p class="mahdi">Plat Principal</p><h2>Lasagne Gratinee</h2><span>Plat principal servi avec garniture et finition maison.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="plat-principal" data-price="69">
+            <img src="/images/menu/platPrincipale4.jpg" alt="Plat principal 4" />
+            <span class="menu-price"><strong>69</strong><small>TND</small></span>
+            <section><p class="mahdi">Plat Principal</p><h2>Bar Grille</h2><span>Plat principal servi avec garniture et finition maison.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="plat-principal" data-price="72">
+            <img src="/images/menu/platPrincipale5.webp" alt="Plat principal 5" />
+            <span class="menu-price"><strong>72</strong><small>TND</small></span>
+            <section><p class="mahdi">Plat Principal</p><h2>Poulet Roti</h2><span>Plat principal servi avec garniture et finition maison.</span></section>
+          </article>
+
+          <article class="menu-item reveal" data-menu-category="dessert" data-price="24">
+            <img src="/images/menu/desert1.jpg" alt="Dessert 1" />
+            <span class="menu-price"><strong>24</strong><small>TND</small></span>
+            <section><p class="mahdi">Dessert</p><h2>Verrine Fraise</h2><span>Dessert gourmand pour terminer le repas en douceur.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="dessert" data-price="27">
+            <img src="/images/menu/desert2.jpg" alt="Dessert 2" />
+            <span class="menu-price"><strong>27</strong><small>TND</small></span>
+            <section><p class="mahdi">Dessert</p><h2>Assiette de Fruits Frais</h2><span>Dessert gourmand pour terminer le repas en douceur.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="dessert" data-price="26">
+            <img src="/images/menu/desert3.jpg" alt="Dessert 3" />
+            <span class="menu-price"><strong>26</strong><small>TND</small></span>
+            <section><p class="mahdi">Dessert</p><h2>Salade Crevettes Agrumes</h2><span>Dessert gourmand pour terminer le repas en douceur.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="dessert" data-price="29">
+            <img src="/images/menu/desert4.jpg" alt="Dessert 4" />
+            <span class="menu-price"><strong>29</strong><small>TND</small></span>
+            <section><p class="mahdi">Dessert</p><h2>Bol de Fruits de Saison</h2><span>Dessert gourmand pour terminer le repas en douceur.</span></section>
+          </article>
+
+          <article class="menu-item reveal" data-menu-category="en-soiree" data-price="48">
+            <img src="/images/menu/soiree.jpg" alt="En soiree 1" />
+            <span class="menu-price"><strong>48</strong><small>TND</small></span>
+            <section><p class="mahdi">En soiree</p><h2>Coupe Dessert Creme</h2><span>Selection pensee pour les moments du soir.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="en-soiree" data-price="52">
+            <img src="/images/menu/soiree2.jpg" alt="En soiree 2" />
+            <span class="menu-price"><strong>52</strong><small>TND</small></span>
+            <section><p class="mahdi">En soiree</p><h2>Couscous Poisson</h2><span>Selection pensee pour les moments du soir.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="en-soiree" data-price="55">
+            <img src="/images/menu/soiree3.jpg" alt="En soiree 3" />
+            <span class="menu-price"><strong>55</strong><small>TND</small></span>
+            <section><p class="mahdi">En soiree</p><h2>Mini Pizzas Salees</h2><span>Selection pensee pour les moments du soir.</span></section>
+          </article>
+          <article class="menu-item reveal" data-menu-category="en-soiree" data-price="59">
+            <img src="/images/menu/soiree4.webp" alt="En soiree 4" />
+            <span class="menu-price"><strong>59</strong><small>TND</small></span>
+            <section><p class="mahdi">En soiree</p><h2>Canapes Betterave</h2><span>Selection pensee pour les moments du soir.</span></section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <section><h2>Restaurant des Arts</h2><p>Un restaurant mediterraneen d'exception a Tunis proposant des grilles, mezze, fruits de mer, plats raffines, douceurs et selections de petit-dejeuner.</p></section>
+        <section><h3>Contact</h3><p>R56P+C9J, cite de la culture Chedli Klibi, Av. Mohamed 5, Tunis 1002</p><a href="tel:+21692936565">+216 92 936 565</a></section>
+        <section><h3>Menu</h3><p>Entrees · Plat Principal · Dessert · En soiree</p><p>Mardi au Dimanche : 12h00 - 23h00<br />Lundi : Ferme</p></section>
+      </div>
+      <small>© 2026 Restaurant des Arts. Tous droits reserves.</small>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

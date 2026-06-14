@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" role="img" aria-labelledby="title desc">
+  <title id="title">Tripadvisor award placeholder</title>
+  <desc id="desc">A placeholder card for the Tripadvisor Travellers' Choice award image.</desc>
+  <rect width="640" height="820" fill="#fffaf0"/>
+  <rect x="42" y="42" width="556" height="736" fill="none" stroke="#d4b57b" stroke-width="3"/>
+  <circle cx="320" cy="260" r="132" fill="#79cf37"/>
+  <path d="M250 295c18 36 47 58 70 58s52-22 70-58" fill="none" stroke="#24452b" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="278" cy="246" r="44" fill="none" stroke="#24452b" stroke-width="16"/>
+  <circle cx="362" cy="246" r="44" fill="none" stroke="#24452b" stroke-width="16"/>
+  <circle cx="278" cy="246" r="10" fill="#24452b"/>
+  <circle cx="362" cy="246" r="10" fill="#24452b"/>
+  <path d="M214 310c-42-20-70-52-88-94m300 94c42-20 70-52 88-94" fill="none" stroke="#24452b" stroke-width="15" stroke-linecap="round"/>
+  <text x="78" y="500" fill="#24452b" font-family="Arial, sans-serif" font-size="50" font-weight="700">Tripadvisor</text>
+  <text x="78" y="560" fill="#24452b" font-family="Arial, sans-serif" font-size="50" font-weight="700">Travellers' Choice</text>
+  <text x="78" y="620" fill="#24452b" font-family="Arial, sans-serif" font-size="50" font-weight="700">Awards 2025</text>
+  <text x="78" y="710" fill="#7b5a30" font-family="Arial, sans-serif" font-size="26">Replace with:</text>
+  <text x="78" y="748" fill="#7b5a30" font-family="Arial, sans-serif" font-size="26">/images/tripadvisor-award-2025.webp</text>
+</svg>
